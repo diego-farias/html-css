@@ -1,2 +1,69 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+header > p  {
+    font-variant: small-caps;
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.233);
+    width: 400px;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    padding: 10px;
+}
