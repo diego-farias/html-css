@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td {
+            border: 2px solid black;
+            width: 400px;
+            height: 50px;
+            padding: 10px;
+        }
+        
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+            Table
+                Thead
+                    tr, td, th
+                Tbody
+                    tr, td, th
+                Tfoot
+                    tr, td, th
+    -->
+    <table>
+        <thead>
+            <tr>
+                <td>Posição</td>
+                <td>Unidade federativa</td>
+                <td>Número de habitantes</td>
+                <td>% da população total</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td>São.Paulo</td>
+                <td>41.262.199</td>
+                <td>22,2%</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td>Minas Gerais</td>
+                <td>16.615.526</td>
+                <td>10,0%</td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td>Rio de Janeiro</td>
+                <td>16.615.526</td>
+                <td>8,0%</td>
+            </tr>
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td>0000</td>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>
