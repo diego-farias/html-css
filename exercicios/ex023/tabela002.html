@@ -7,12 +7,28 @@
     <title>Tabelas</title>
     
     <style>
+
+        h1 {
+            text-decoration: underline;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-style: italic;
+            font-weight: bolder;
+            text-transform: uppercase;
+            padding: 15px;
+            background-color: lightgray;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
-            width: 1000px;
+            width: 900px;
             height: 30px;
             border-collapse: collapse;
             margin: auto;
@@ -30,14 +46,17 @@
             text-align: center;
             font-style: italic;
             font-weight: 600;
+            letter-spacing: 1px;
         }
 
         td.num {
             text-align: right;
+            padding-right: 15px;
         }
 
         td.nom {
             text-align: left;
+            padding-left: 15px;
         }
     </style>
 
@@ -47,20 +66,24 @@
     <!--
         Anatomia para tabelas grandes
             Table
-                Thead
-                    tr, td, th
-                Tbody
-                    tr, td, th
-                Tfoot
-                    tr, td, th
+                Caption
+                    Thead
+                        tr, td, th
+                    Tbody
+                        tr, td, th
+                    Tfoot
+                        tr, td, th
     -->
     <table>
+
+        <caption>População das Unidades Federativas - Dezembro de 2022</caption>
+
         <thead>
             <tr>
-                <td>Posição</td>
-                <td>Unidade federativa</td>
-                <td>Número de habitantes</td>
-                <td>% da população total</td>
+                <th scope="col" style="width: 100px">Posição</td>
+                <th>Unidade federativa</td>
+                <th>Número de habitantes</td>
+                <th scope="col" style="width: 180px">% da população total</td>
             </tr>
         </thead>
 
@@ -231,7 +254,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>199.003.827</strong></td>
             </tr>
 
