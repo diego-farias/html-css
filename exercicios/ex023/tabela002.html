@@ -29,24 +29,38 @@
 
         table {
             width: 900px;
-            height: 30px;
             border-collapse: collapse;
             margin: auto;
             text-align: center;
+            position: relative;
         }
 
         td, th {
             border: 2px solid black;
-            padding: 10px;
+            padding: 5px;
         }
         
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(143, 143, 143);
             color: white;
             text-align: center;
             font-style: italic;
             font-weight: 600;
             letter-spacing: 1px;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(143, 143, 143);
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: rgb(0, 185, 185);
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: aqua;
         }
 
         td.num {
